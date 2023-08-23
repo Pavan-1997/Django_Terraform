@@ -12,25 +12,25 @@ aws ecr get-login-password --region us-west-1 | docker login --username AWS --pa
 3. `docker build -t 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest . `
 
 
-docker push 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest
+4. `docker push 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest`
 
-Change the docker_image_url_django in VARIABLES.TF file with your current repo name 
+    Change the docker_image_url_django in VARIABLES.TF file with your current repo name 
 
+    Change the file paths in iam.tf and variables.tf file
+    
 
-Change the file paths in iam.tf and variables.tf file
+5. Go to terraform folder and hit this below command
+```
+    ssh-keygen -f california-region-key-pair
+```
 
-Go to terraform folder and hit this below command 
-
-ssh-keygen -f california-region-key-pair
-
-
-terraform init 
-
-
-terraform plan -out terraform.out
+6. `terraform init`
 
 
-terraform apply "terraform.out"
+7. `terraform plan -out terraform.out`
+
+
+8. `terraform apply "terraform.out"`
 
 
 
