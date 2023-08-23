@@ -34,7 +34,7 @@ aws ecr get-login-password --region us-west-1 | docker login --username AWS --pa
 
 
 
-
+```
 
 
 pip install boto3 click
@@ -50,7 +50,8 @@ export AWS_DEFAULT_REGION="us-west-1"
 
 
 python update-ecs.py --cluster=production-cluster --service=production-service
+```
 
 
-terraform destroy
+9. `terraform destroy`
 
