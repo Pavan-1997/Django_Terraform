@@ -9,7 +9,7 @@ aws ecr get-login-password --region us-west-1 | docker login --username AWS --pa
 2. `cd app/` 
 
 
-3. `docker build -t 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest . `
+3. `docker build -t 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest . ` 
 
 
 4. `docker push 600735812827.dkr.ecr.us-west-1.amazonaws.com/django-app:latest`
