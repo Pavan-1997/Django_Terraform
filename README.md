@@ -1,4 +1,4 @@
-1. Create a repo in aws ECR name - > `django-app`
+1. Create a repo in aws ECR name - > `django-app` 
 
     IMPORTANT - Once the repo is create change the 600735812827.dkr.ecr.us-west-1.amazonaws.com BELOW VALUES IN COMMANDS TO THE REPO OF YOURS 
                
